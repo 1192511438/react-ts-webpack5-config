@@ -2,7 +2,7 @@
   "presets": [
                 ["@babel/preset-env",{"useBuiltIns":"usage","corejs":{
                 "version":3
-              },"targets": "> 0.25%, not dead"
+              },"targets": "> 0.25%, not dead","module":false
             }
               ],
             "@babel/preset-react",
