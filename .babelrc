@@ -1,8 +1,23 @@
+// {
+//   "presets": [
+//                 ["@babel/preset-env",{"useBuiltIns":"usage","corejs":{
+//                 "version":3
+//               },"targets": "> 0.25%, not dead","modules":false
+//             }
+//               ],
+//             "@babel/preset-react",
+//             "@babel/preset-typescript"],
+  
+//   "plugins": [["@babel/plugin-transform-runtime",{"corejs":3}],
+//               ["import", {"libraryName": "antd","libraryDirectory": "es","style": "css"},
+//               "@babel/plugin-syntax-dynamic-import"]
+//              ]
+// }  //这个配置有点过于麻烦，ie11一下直接扔了，没必要使用core-js。react本来也就不支持，甚至vue3直接抛弃了ie所有浏览器
+
+
 {
   "presets": [
-                ["@babel/preset-env",{"useBuiltIns":"usage","corejs":{
-                "version":3
-              },"targets": "> 0.25%, not dead","modules":false
+                ["@babel/preset-env", {"modules":false
             }
               ],
             "@babel/preset-react",
@@ -12,4 +27,4 @@
               ["import", {"libraryName": "antd","libraryDirectory": "es","style": "css"},
               "@babel/plugin-syntax-dynamic-import"]
              ]
-}
+}  
